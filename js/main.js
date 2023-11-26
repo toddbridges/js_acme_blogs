@@ -57,7 +57,7 @@ function deleteChildElements(parentElement) {
     return parentElement;
 }
 
-// function 6
+// function 6 
 function addButtonListeners() {
     const theMain = document.querySelector("main");
     const allButtons = theMain.querySelectorAll("button");
@@ -294,11 +294,12 @@ const refreshPosts = async (posts) => {
 // function 19
 const selectMenuChangeEventHandler = async (event) => {
     if(!event) return;
-    const sel = document.querySelector('SELECT');
+    const sel = document.getElementById('selectMenu');
     sel.disabled = true;
     const userId = event?.target?.value || 1;
     const jsonPosts = await getUserPosts(userId);
     const refreshArray = await refreshPosts(jsonPosts);
+    console.log(refreshArray);
     sel.disabled = false;
     const arr = [];
     arr.push(userId);
@@ -324,8 +325,9 @@ const initApp = () => {
     initPage();
     const selMenu = document.getElementById("selectMenu");
     selMenu.addEventListener("change", (event) => {
-        selectMenuChangeEventHandler();
-    });
+        selectMenuChangeEventHandler(event);
+        
+    })
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
