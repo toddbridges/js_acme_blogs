@@ -14,6 +14,8 @@ Did you miss some?
 
 It's ok. Go back and make corrections. Then check your score again!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/efab7d3f-96a8-494c-91c7-7e591a519cd9/deploy-status)](https://app.netlify.com/sites/snazzy-lebkuchen-48f146/deploys)
+
 When you are ready to submit your work, follow the instructions that are at the top of the score page.
 
 ### Academic Honesty
